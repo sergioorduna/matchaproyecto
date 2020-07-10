@@ -1,6 +1,6 @@
 header{
     height: 100px;
-    background-color: darkblue;
+    background-color: #204051;
 }
 img {
     height: 150px;
@@ -8,3 +8,11 @@ img {
     margin: 15px;
 }
 
+.nav {
+height: 45px;
+width: 45px;
+color: white;
+background-color: white;
+display: flex;
+justify-content: center;
+}
