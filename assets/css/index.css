@@ -1,18 +1,26 @@
-header{
-    height: 100px;
-    background-color: #204051;
+body{
+    margin: 0;
 }
+a{
+    text-decoration: none;
+}
+
+#navtag{
+
+    background-color: rgb(96, 134, 170);
+    height: 100px;
+    width: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 img {
     height: 150px;
     width: 150px;
     margin: 15px;
+    display: flex;
+    
+
 }
 
-.nav {
-height: 45px;
-width: 45px;
-color: white;
-background-color: white;
-display: flex;
-justify-content: center;
-}
