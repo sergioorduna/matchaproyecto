@@ -1,21 +1,31 @@
 body{
-    background-color: rgb(116, 165, 214);
+    
     margin: 0;
 }
 a{
     text-decoration: none;
 }
 
+img {
+    height: 150px;
+    width: 150px;
+    margin: 15px;
+    display: flex;
+    
+    
+
+}
+
+
 #navtag{
 
-    background-color: rgb(96, 134, 170);
+    background-color: rgb(8, 8, 8);
     height: 100px;
     width: 100;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    
-}
+    }
 
 nav ul{
     padding: 0;
@@ -27,19 +37,19 @@ nav ul{
 
 nav ul li{
     display: inline-block;
-    background-color: mediumseagreen;
+    
 
 }
 nav a{
     display:block;
     padding:0 20px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 16px;
     line-height: 60px;
     text-decoration: none;
 }
 nav a:hover{
-    background-color: #000000;
+    background-color: #9e6666;
 }
 /* desplegable escondido*/
 nav ul ul {
@@ -98,10 +108,4 @@ i {
     -webkit-transform: rotate(45deg);
 }
 
-img {
-    height: 150px;
-    width: 150px;
-    margin: 15px;
-    display: flex;
-}
 
