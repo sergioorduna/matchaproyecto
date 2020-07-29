@@ -16,7 +16,7 @@
 }
 
 .header-contenedor{
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
     display: flow-root;
     background-color: black;   
@@ -24,6 +24,7 @@
 
 body{
   margin: 0;
+  width: 100%;
 }
 
 h1{
@@ -33,6 +34,8 @@ h1{
     margin: 0 30px 0 30px;
     font-size: 30px;
     color: white;  
+     color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 .redes-sociales{
@@ -114,16 +117,18 @@ h1{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
 }
 
 .container-cover::before{
 	content:'';
 	position: absolute;
-    top: 0;
+  top: 0;
 	bottom: 0;
 	left: 0;
-	right: 0;
-	background-color:;
+  right: 0;
+  
+  
 }
 
 .container-info-cover{
@@ -140,8 +145,7 @@ h1{
     align-items: center;
     flex-direction: column;
     margin-left: 149px;
-    font-size: 15px;
-    
+    font-size: 15px; 
 }
 
 .container-info-cover p{
@@ -150,6 +154,42 @@ h1{
   font-size: 17px;
 }
 
+.ping{
+  border: 1px solid #dddddd;
+  box-sizing: inherit;
+  color: #000000;
+  padding: 47px;
+margin-top: 55px;
+margin-left: 50px;
+margin-right: 50px;
+}
+
+.dayli{
+  padding: 32px 64px;
+  color: #000000;
+  background-color: #f1f1f1;
+  text-align: center;
+  box-sizing: inherit;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  line-height: 1,5;
+}
+
+.newspaper{
+  padding: 15px;
+  column-count: 3;
+  column-gap: 40px;
+  column-rule: 1px solid lightgray;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  font-size: 15px;
+  box-sizing: inherit;
+  color: #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+
+
 /*Contenedor-contenido del articulo y secciones*/
 
 .container-content{
@@ -157,27 +197,22 @@ h1{
   margin: auto;
   margin-top: 80px;
   
+}
+
+.container-content .articulo{
+ width: 100%;
+ padding: 30px;
+ padding-bottom: 40px;
+ border-radius: 9px;
+ overflow: hidden;
+ position: relative;
+ text-align: justify;
+ column-count: 2;
 
 }
 
-article{
-  width: 100%;
-  padding: 30px;
-  padding-bottom: 40px;
-  border-radius: 9px;
-  overflow: hidden;
-  position: relative;
-  
+img{
+  height: 200px;
+
 }
-article h3{
-  font-size: 22px;
-}
-article {
-  margin-top: 35px;
-  margin: auto;
-  
-}
-article img{
-height: 200px;
-margin: auto;
-}
+
