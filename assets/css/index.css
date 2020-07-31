@@ -25,6 +25,7 @@
 body{
   margin: 0;
   width: 100%;
+  
 }
 
 h1{
@@ -34,8 +35,9 @@ h1{
     margin: 0 30px 0 30px;
     font-size: 30px;
     color: white;  
-     color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
 }
 
 .redes-sociales{
@@ -117,6 +119,8 @@ h1{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+    
     
 }
 
@@ -128,7 +132,7 @@ h1{
 	left: 0;
   right: 0;
   
-  
+
 }
 
 .container-info-cover{
@@ -152,6 +156,7 @@ h1{
   color: black;
   margin-top: 15px;
   font-size: 17px;
+  align-content: center;
 }
 
 .ping{
@@ -159,9 +164,9 @@ h1{
   box-sizing: inherit;
   color: #000000;
   padding: 47px;
-margin-top: 55px;
-margin-left: 50px;
-margin-right: 50px;
+  margin-top: 55px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .dayli{
@@ -192,10 +197,17 @@ margin-right: 50px;
 
 /*Contenedor-contenido del articulo y secciones*/
 
-.container-content{
+#articulos-principales{
+  border: 1px solid black;
+  margin: 30px;
+  
+}
+
+.image-big {
   width: 1200px;
   margin: auto;
   margin-top: 80px;
+  background-color: blue;
   
 }
 
@@ -214,5 +226,82 @@ margin-right: 50px;
 img{
   height: 200px;
 
+} 
+
+
+.image-small-first{
+  background-color: brown;
+  width: 1200px;
+  margin: auto;
+  margin-top: 80px;
 }
 
+.image-tiny{
+  background-color: cornflowerblue;
+  width: 1200px;
+  margin: auto;
+  margin-top: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* pie de pagina */
+
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: 0;
+  }
+  .page-wrap:after {
+  content: "";
+  display: block;
+  }
+  .site-footer, .page-wrap:after {
+  background-color: orange;
+  }
+  .site-footer {
+  background: black;
+  }
+  
+  .site-footer h5{
+  display: flex;
+  position: relative;
+  margin: 0 10px 0 10px;
+  color: white;
+  padding: 20px;
+  float: left;
+  
+  }
+  
+  .site-footer nav{
+  display: flex;
+  list-style: none;
+  text-decoration: underline white;
+  justify-content: flex-end;
+  position: relative;
+  margin: 0;
+  padding: 15px;
+  }
+  
+  .site-footer nav li{
+  display: flex;
+  position: relative;
+  margin: 0 25px 0 25px;
+  margin-bottom: 35px;
+  color: white;
+  
+  }
+  
+  .site-footer nav li a{
+  display: flex;
+  position: relative;
+  margin: 0 10px 0 10px;
+  }
