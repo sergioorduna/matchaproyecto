@@ -1,0 +1,19 @@
+nav {
+  height: 100%;
+  width: 100%;
+  background-color: #035aa6;
+}
+
+ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+/*# sourceMappingURL=index.css.map */
