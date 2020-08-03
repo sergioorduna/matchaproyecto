@@ -1,165 +1,143 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-
-
-.header-contenedor{
-    max-width: 100%;
-    margin: auto;
-    display: flow-root;
-    background-color: black;  
-    
-    
-}
-
-body{
+body {
   margin: 0;
   width: 100%;
-
 }
-
-h1{
-    display: flex;
-    position: relative;
-    top: 8px;
-    margin: 0 30px 0 30px;
-    font-size: 30px;
-    color: white;  
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-    
+body .header-contenedor {
+  max-width: 100%;
+  margin: auto;
+  display: flow-root;
+  background-color: black;
 }
-
-.redes-sociales{
-    color:white;
-    font-size: 15px;
-    display: inline-block;
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    top: -15px;
-    margin: 0 80px 0 80px;  
-    
+body .header-contenedor .logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.menu nav{
-    background-color: black;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    
-    
-}
-
-.menu nav ul{
-    padding: 0em;
-    float: left;
-    display: flex;
+@media screen and (max-width: 800px) {
+  body .header-contenedor .logo {
     justify-content: center;
-    z-index: 1;
+  }
 }
-
-.menu nav ul li{
-    float: left;
-    list-style: none;
-    position: relative;
+body .header-contenedor .logo h1 {
+  display: flex;
+  position: relative;
+  top: 8px;
+  margin: 0 30px 0 30px;
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
-
-.menu nav ul li a{
-    display:block;
-    padding: 0 2rem;
-    line-height: 5rem;
-    color: white;
-    text-decoration: none;
-    text-shadow: 3px 3px 1px black;
+body .header-contenedor .logo .redes-sociales {
+  color: white;
+  font-size: 15px;
+  margin: 0 80px 0 80px;
 }
-
-.menu nav ul li ul{
-    display: none;
-    position: absolute;
-    background-color: black;
-    border: 1px outset linear-gradient(70deg, black, white);
-    border-radius: 10px;
+@media screen and (max-width: 800px) {
+  body .header-contenedor .logo .redes-sociales {
+    margin-top: 25px;
+    margin-right: 0;
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
 }
-
-
-.menu nav ul li:hover ul{
-    display: block ;
+body .header-contenedor .menu nav {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
-
-.menu nav ul li ul li{
-    width: 100%;
-    
+body .header-contenedor .menu nav ul {
+  padding: 0em;
+  justify-content: center;
+  z-index: 1;
 }
-
-
-.menu nav ul li ul a:hover{
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-   border-radius: 10px;
-
+body .header-contenedor .menu nav ul li {
+  float: left;
+  list-style: none;
+  position: relative;
 }
-
+@media screen and (max-width: 800px) {
+  body .header-contenedor .menu nav ul li {
+    float: none;
+  }
+}
+body .header-contenedor .menu nav ul li:hover ul {
+  display: block;
+}
+body .header-contenedor .menu nav ul li a {
+  display: block;
+  padding: 0 2rem;
+  line-height: 5rem;
+  color: white;
+  text-decoration: none;
+  text-shadow: 3px 3px 1px black;
+}
+body .header-contenedor .menu nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: black;
+  border: 1px outset linear-gradient(70deg, black, white);
+  border-radius: 10px;
+}
+body .header-contenedor .menu nav ul li ul li {
+  width: 100%;
+}
+body .header-contenedor .menu nav ul li ul li a:hover {
+  background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+  border-radius: 10px;
+}
 
 /*Portada*/
-.container-cover{
-    width: 100%;
-    height: 400px;
-    position: relative;
-    background-image: url(/assets/img/img/covernueva.jpg);
-    display: flex;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    
-    
+.container-cover {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background-image: linear-gradient(180deg, rgba(46, 85, 214, 0.774), rgba(13, 14, 70, 0.808)), url(/assets/img/img/covernueva.jpg);
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.container-cover::before{
-	content:'';
-	position: absolute;
-  top: 0;
-	bottom: 0;
-	left: 0;
-  right: 0;
-  
-  
-
+.container-info-cover {
+  max-width: 800px;
+  height: 100px;
+  margin: auto;
+  color: #f4f6ff;
+  display: flex;
+  background-position: center;
+  text-align: center;
+  flex-direction: column;
+  font-size: 15px;
 }
 
-.container-info-cover{
-    max-width: 800px;
-    height: 100px;
-    margin: auto;
-    color: #f4f6ff;
-    display: flex;
-    background-position: center;
-    text-align: center;
-    flex-direction: column;
-    font-size: 15px; 
-}
-
-.container-info-cover p{
+.container-info-cover p {
   color: wheat;
   margin-top: 15px;
   font-size: 17px;
   align-content: center;
 }
 
-.ping{
+.ping {
   border: 1px solid #dddddd;
   box-sizing: inherit;
   color: #000000;
   padding: 47px;
   margin-top: 55px;
-  margin-left: 50px;
   margin-right: 50px;
+  margin-bottom: 50px;
+  margin-left: 0;
 }
-
-.dayli{
+.ping .dayli {
   padding: 32px 64px;
   color: #000000;
   background-color: #f1f1f1;
@@ -167,14 +145,15 @@ h1{
   box-sizing: inherit;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
-  line-height: 1,5;
+  line-height: 1, 5;
 }
-
-.newspaper{
+.ping .news-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ping .news-container .newspaper {
+  width: 33%;
   padding: 15px;
-  column-count: 3;
-  column-gap: 40px;
-  column-rule: 1px solid lightgray;
   margin-top: 1.2em;
   margin-bottom: 1.2em;
   font-size: 15px;
@@ -183,90 +162,72 @@ h1{
   font-family: fantasy;
   line-height: 1.5;
 }
-
-
-
+@media screen and (max-width: 800px) {
+  .ping .news-container .newspaper {
+    width: 100%;
+  }
+}
 
 /*Contenedor-contenido del articulo y secciones*/
-
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
   border-radius: 5px;
-  display: flex;
-  margin-left: 15px;
   margin-top: 45px;
-  margin-bottom: 45px;
   margin-right: 15px;
+  margin-bottom: 45px;
+  margin-left: 15px;
   font-family: fantasy;
-  
 }
-
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  display: flex;
-  margin-left: 15px;
-  margin-top: 45px;
-  margin-bottom: 45px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-
-.container {
-  padding: 2px 16px;
-  display: flex;
-  margin-left: 15px;
-  margin-top: 45px;
-  margin-bottom: 45px;
- 
-
-}
-
-.container h4{
-  color:black;
-}
-
-
-.card img{
-  height: 250px;
-  border-radius: 5px 5px 0 0;
-  display: flex;
-  margin-left: 15px;
+.card .container {
+  width: 47%;
   margin-top: 20px;
+  margin-right: 0;
   margin-bottom: 45px;
-  
+  margin-left: 15px;
 }
-
-
+.card .container h4 {
+  color: black;
+}
+@media screen and (max-width: 800px) {
+  .card .container {
+    width: 100%;
+  }
+}
+.card img {
+  width: 47%;
+  border-radius: 5px 5px 0 0;
+}
+@media screen and (max-width: 800px) {
+  .card img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
 
 /* pie de pagina */
-
-
 .page-wrap {
   min-height: 100%;
   margin-bottom: 0;
-  }
-  .page-wrap:after {
-  content: "";
-  display: block;
-  }
-  .site-footer, .page-wrap:after {
-  background-color: orange;
-  }
-  .site-footer {
+}
+.page-wrap .site-footer {
   background: black;
-  }
-  
-  .site-footer h5{
+}
+.page-wrap .site-footer h5 {
   display: flex;
   position: relative;
   margin: 0 10px 0 10px;
   color: white;
   padding: 20px;
   float: left;
-  
-  }
-  
-  .site-footer nav{
+}
+.page-wrap .site-footer nav {
   display: flex;
   list-style: none;
   text-decoration: underline white;
@@ -274,54 +235,18 @@ h1{
   position: relative;
   margin: 0;
   padding: 15px;
-  }
-  
-  .site-footer nav li{
+}
+.page-wrap .site-footer nav li {
   display: flex;
   position: relative;
   margin: 0 25px 0 25px;
   margin-bottom: 35px;
-  color: white;
-  
-  }
-  
-  .site-footer nav li a{
+}
+.page-wrap .site-footer nav li a {
   display: flex;
   position: relative;
   margin: 0 10px 0 10px;
-  }
-
-
-
-@media screen and (max-width:800px){
-  body{
-    background-color: teal;
-    
-  }
+  color: #fff;
 }
 
-
-@media screen and (max-width:800px){
-  .card img {
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: start;
-  }
-}
-@media screen and (max-width:450px){
-  .header{
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    
-  }
-}
-
-@media screen and (max-width:480px){
-	body {
-		font-size: 80%; 
-	} 
-}
-
-
+/*# sourceMappingURL=index.css.map */

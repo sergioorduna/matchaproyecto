@@ -1,0 +1,38 @@
+/* pie de pagina */
+.page-wrap {
+    min-height: 100%;
+    margin-bottom: 0;
+    .site-footer {
+        background: black;
+        h5{
+            display: flex;
+            position: relative;
+            margin: 0 10px 0 10px;
+            color: white;
+            padding: 20px;
+            float: left;
+            
+        }
+        nav{
+            display: flex;
+            list-style: none;
+            text-decoration: underline white;
+            justify-content: flex-end;
+            position: relative;
+            margin: 0;
+            padding: 15px;
+            li{
+                display: flex;
+                position: relative;
+                margin: 0 25px 0 25px;
+                margin-bottom: 35px;
+                a {
+                    display: flex;
+                    position: relative;
+                    margin: 0 10px 0 10px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

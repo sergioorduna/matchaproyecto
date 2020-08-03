@@ -1,25 +1,14 @@
 $primary-color: #035aa6;
 $text-color: black;
 
-nav{
-    ul {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        li{
-            float: left;
-            list-style: none;
-            position: relative;
-            a{
-                display:block;
-                padding: 0 2rem;
-                line-height: 5rem;
-                color: white;
-                text-decoration: none;
-                text-shadow: 3px 3px 1px black;
-            }
-        }
-    } 
-       
-    
+@mixin margenes($marginTop, $marginRight, $marginBottom, $marginLeft){
+    margin-top: $marginTop;
+    margin-right: $marginRight;
+    margin-bottom: $marginBottom;
+    margin-left: $marginLeft;
 }
+
+@import "_header.scss";
+@import "_portada.scss";
+@import "_cards.scss";
+@import "_footer";

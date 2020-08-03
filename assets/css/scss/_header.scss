@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;  
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    .header-contenedor{
+        max-width: 100%;
+        margin: auto;
+        display: flow-root;
+        background-color: black; 
+        .logo {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            @media screen and (max-width:800px){
+                justify-content: center;
+            } 
+            h1 {
+                display: flex;
+                position: relative;
+                top: 8px;
+                margin: 0 30px 0 30px;
+                font-size: 30px;
+                color: white;  
+                text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            }
+            .redes-sociales{
+                color:white;
+                font-size: 15px;
+                margin: 0 80px 0 80px; 
+                @media screen and (max-width:800px){
+                    @include margenes(25px, 0, 15px, 0);
+                }   
+            }
+        } 
+        .menu nav{
+            background-color: black;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            ul{
+                padding: 0em;
+                justify-content: center;
+                z-index: 1;
+                li{
+                    float: left;
+                    list-style: none;
+                    position: relative;
+                    @media screen and (max-width:800px){
+                        float: none;
+                    } 
+                    &:hover ul{
+                        display: block ;
+                    }
+                    a{
+                        display:block;
+                        padding: 0 2rem;
+                        line-height: 5rem;
+                        color: white;
+                        text-decoration: none;
+                        text-shadow: 3px 3px 1px black;
+                    }
+                    ul{
+                        display: none;
+                        position: absolute;
+                        background-color: black;
+                        border: 1px outset linear-gradient(70deg, black, white);
+                        border-radius: 10px;
+                        li{
+                            width: 100%;
+                            a {
+                                &:hover {
+                                    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+                                border-radius: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+                
+    }
+}
