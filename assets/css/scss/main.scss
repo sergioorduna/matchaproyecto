@@ -2,20 +2,24 @@ $primary-color: #035aa6;
 $text-color: black;
 
 nav{
-    height: 100%;
-    width: 100%;
-    background-color:$primary-color ;
-    }
-ul{
-    padding: 0;
+    ul {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        li{
+            float: left;
+            list-style: none;
+            position: relative;
+            a{
+                display:block;
+                padding: 0 2rem;
+                line-height: 5rem;
+                color: white;
+                text-decoration: none;
+                text-shadow: 3px 3px 1px black;
+            }
+        }
+    } 
+       
     
-    display: flex;
-    justify-content: center;
-} 
-li{
-    float: left;
-    list-style: none;
-    position: relative;
-}   
-
-
+}
