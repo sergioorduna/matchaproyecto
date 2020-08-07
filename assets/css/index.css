@@ -17,7 +17,6 @@ body .header-contenedor {
 }
 body .header-contenedor .logo {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -85,14 +84,14 @@ body .header-contenedor .menu nav ul li ul {
   position: absolute;
   background-color: black;
   border: 1px outset linear-gradient(70deg, black, white);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 body .header-contenedor .menu nav ul li ul li {
   width: 100%;
 }
 body .header-contenedor .menu nav ul li ul li a:hover {
   background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 /*Portada*/
@@ -100,7 +99,7 @@ body .header-contenedor .menu nav ul li ul li a:hover {
   width: 100%;
   height: 400px;
   position: relative;
-  background-image: linear-gradient(180deg, rgba(46, 85, 214, 0.774), rgba(13, 14, 70, 0.808)), url(/assets/img/img/covernueva.jpg);
+  background-image: url(/assets/img/img/covernueva.jpg);
   display: flex;
   background-repeat: no-repeat;
   background-position: center;
@@ -129,13 +128,11 @@ body .header-contenedor .menu nav ul li ul li a:hover {
 
 .ping {
   border: 1px solid #dddddd;
-  box-sizing: inherit;
   color: #000000;
-  padding: 47px;
   margin-top: 55px;
-  margin-right: 50px;
+  margin-right: 15px;
   margin-bottom: 50px;
-  margin-left: 0;
+  margin-left: 15px;
 }
 .ping .dayli {
   padding: 32px 64px;

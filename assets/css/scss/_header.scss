@@ -15,7 +15,6 @@ body{
         background-color: black; 
         .logo {
             display: flex;
-            flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
             @media screen and (max-width:800px){
@@ -71,13 +70,13 @@ body{
                         position: absolute;
                         background-color: black;
                         border: 1px outset linear-gradient(70deg, black, white);
-                        border-radius: 10px;
+                        border-radius: 5px;
                         li{
                             width: 100%;
                             a {
                                 &:hover {
                                     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-                                border-radius: 10px;
+                                border-radius: 5px;
                                 }
                             }
                         }

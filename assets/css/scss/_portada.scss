@@ -9,6 +9,8 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    
+    
 }
 .container-info-cover{
     max-width: 800px;
@@ -29,10 +31,9 @@
 }
 .ping{
     border: 1px solid #dddddd;
-    box-sizing: inherit;
     color: #000000;
-    padding: 47px;
-    @include margenes(55px, 50px, 50px, 0);
+    
+    @include margenes(55px, 15px, 50px, 15px);
     .dayli{
         padding: 32px 64px;
         color: #000000;
