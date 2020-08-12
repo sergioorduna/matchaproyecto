@@ -111,7 +111,7 @@ body .header-contenedor .menu nav ul li ul li a:hover {
   max-width: 800px;
   height: 100px;
   margin: auto;
-  color: #f4f6ff;
+  color: wheat;
   display: flex;
   background-position: center;
   text-align: center;
@@ -229,8 +229,6 @@ body .header-contenedor .menu nav ul li ul li a:hover {
   list-style: none;
   text-decoration: underline white;
   justify-content: flex-end;
-  position: relative;
-  margin: 0;
   padding: 15px;
 }
 .page-wrap .site-footer nav li {
